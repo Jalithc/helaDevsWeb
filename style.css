@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #FF7979;
+
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+
+}
+body{
+    background: var(--bg-color) url(view.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15%;
+    background: transparent;
+    transition: all ease .45s;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 41px;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--main-color);
+}
+.nav-bar{
+    display: flex;
+}
+.nav-bar a{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+.nav-bar a:hover{
+    color: var(--main-color);
+}
+.nav-bar a.active{
+    color: var(--main-color);
+}
+.btn {
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+}
+section{
+    padding: 0 15%;
+}
+img {
+    max-width: 110%; 
+    height: auto;    
+    display: block;
+    margin: auto; 
+}
+#home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.home-txt span{
+    padding: 5px 25px;
+    background: linear-gradient(130.08deg, #FF7979 0%, #1f1f21 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    border-radius: 100px;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.home-txt p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.go-btn {
+    display: inline-block;
+    padding: 14px 34px;
+    background: var(--main-color);
+    color: #fff;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.1s rase-in-out;
+}
+.go-btn:hover {
+    transform: translateY(1px);
+    background: transparent;
+    color: var(--main-color);
+}
+#about{
+    width: 100%;
+    padding: 100px 0px;
+}
+#about img{
+    display: block;
+    height: auto;
+    width: 430px;
+    margin-left: 0;
+}
+.about-txt{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-txt h2{
+    color: var(--text-color);
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-txt h5{
+    color: var(--text-color);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-txt p{
+    color: var(--main-color);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+}
+.contact-me {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me{
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: var(--text-color);
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: var(--main-color);
+    bottom: 35px;
+    font-size: 14px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: var(--main-color);
+}
+.cancelbtn, .signupbtn, login-btn {
+    float: left;
+    width: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: var(--bg-color);
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+  
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+  
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+.lecturers{
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: var(--text-color);
+    font: 100px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    background: var(--bg-color);
+    padding: 20px 35px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card img{
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 50%;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: var(--main-color);
+}
+h5{
+    color: var(--text-color);
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+}
+
+

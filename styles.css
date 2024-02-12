@@ -1,0 +1,102 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Fredoka', sans-serif;
+}
+body {
+	font-size: 120%;
+	background: #1f1f21;
+}
+
+.header {
+	width: 30%;
+	margin: 50px auto 0px;
+	color: #1f1f21;
+	background: #FF7979;
+	text-align: center;
+	border: 1px solid black;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+}
+form, .content {
+	width: 30%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #FF7979;
+	background: #1f1f21;
+	border-radius: 0px 0px 10px 10px;
+}
+label{
+	color: white;
+}
+.input-group {
+	margin: 10px 10px 10px 10px;
+}
+
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 5px;
+	font-size: 20px;
+}
+.input-group input {
+	height: 32px;
+	width: 95%;
+	padding: 5px 10px;
+	font-size: 15px;
+	border-radius: 10px;
+	border: 1px solid gray;
+}
+.btn {
+	cursor: pointer;
+	padding: 12px;
+	font-size: 16px;
+	color: white;
+	background: #FF7979;
+	border: none;
+	border-radius: 10px;
+}
+.btn:hover{
+	background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #FF7979; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.success {
+	color: black; 
+	background: #dff0d8; 
+	border: 1px solid #a94442;
+	margin-bottom: 20px;
+}
+p{
+	color: white;
+}
+.button {
+	background-color: #FF7979;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 8px;
+}
+.button:hover{
+	background-color: transparent;
+    border: 2px solid #dff0d8;
+    cursor: pointer;
+}
+

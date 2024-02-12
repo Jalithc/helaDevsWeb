@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #FF7979;
+
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+
+}
+body{
+    background: var(--bg-color) center/cover no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+h2{
+    text-align: center;
+}
+.lecturers{
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: var(--text-color);
+    font: 100px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    background: #9c9a9b;
+    padding: 20px 35px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card img{
+    max-width: auto;
+    max-height: 40%;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: var(--main-color);
+}
+h5{
+    color: var(--text-color);
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+}

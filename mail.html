@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="heladevs.png">
+        <title>HelaDevs:Mail</title>
+        <style>
+            input[type="submit"]:hover{
+                background-color: transparent;
+                border: 2px solid var(--main-color);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body style="background: #1f1f21;">
+        <h2>Send Mail to get more details about Us!</h2>
+
+        <form action="mailto:heladevs@gmail.com" method="post" enctype="text/plain" style="width: 75%;">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Comment:<br>
+            <input type="text" name="comment" size="100"><br><br>
+            <!------------------send button-------------------->
+            <input type="submit" value="Send" style="background-color: var(--main-color);
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: transform .4s;
+            cursor: pointer;">
+        
+            <!-----------reset button----------------------->
+            <input type="reset" value="Reset" style="background-color: var(--main-color);
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: transform .4s;
+            cursor: pointer;">
+            </style>
+        </form>
+        
+    </body>
+</html>
